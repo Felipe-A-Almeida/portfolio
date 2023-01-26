@@ -3,6 +3,7 @@
   --secondary-color: #8591FF;
   --primary-text-color: #D3D4F0;
   --primary-bar-color: #6676ff;
+  --primary-card-color: #181D4859
 }
 
 .page {
@@ -60,4 +61,10 @@
 }
 .f18{
   font-size: 18px;
+}
+
+.project-card{
+  min-width: 50vh;
+  background-color: var(--primary-card-color);
+  color: var(--primary-text-color)
 }

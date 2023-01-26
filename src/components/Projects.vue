@@ -28,10 +28,43 @@
           show-arrows
         >
           <v-slide-item
-            v-for="n in 25"
+            v-for="n in 9"
             :key="n"
-            v-slot="{ active, toggle }"
           >
+            <v-card
+              class="mx-10 project-card"
+            >
+              <v-img
+                class="white--text align-end"
+                height="200px"
+                src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+              />
+              <v-card-subtitle class="mt-5 pb-0">
+                <span class="f24">Number 10</span>
+              </v-card-subtitle>
+
+              <v-card-text class="text--primary">
+                <div>Whitehaven Beach</div>
+
+                <div>Whitsunday Island, Whitsunday Islands</div>
+              </v-card-text>
+
+              <v-card-actions>
+                <v-btn
+                  color="var(--secondary-color)"
+                  text
+                >
+                  Share
+                </v-btn>
+
+                <v-btn
+                  color="var(--secondary-color)"
+                  text
+                >
+                  Explore
+                </v-btn>
+              </v-card-actions>
+            </v-card>
           </v-slide-item>
         </v-slide-group>
       </v-col>

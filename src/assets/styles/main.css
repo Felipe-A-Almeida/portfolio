@@ -1,0 +1,63 @@
+:root {
+  --primary-color: #020415;
+  --secondary-color: #8591FF;
+  --primary-text-color: #D3D4F0;
+  --primary-bar-color: #6676ff;
+}
+
+.page {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.float-right {
+  float: right;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.decoration-none{
+  text-decoration: none;
+}
+
+.background--primary{
+  background-color: var(--primary-color);
+}
+#profile-photo{
+  margin-top: 50px;
+}
+
+.bar--primary{
+  border-left: 5px solid var(--primary-bar-color);
+}
+.bar--secondary{
+  border-bottom: 3px solid var(--primary-bar-color);
+}
+
+.text-white {
+  color: white;
+}
+.text--primary{
+  color: var(--primary-text-color);
+}
+.text--secondary{
+  color: var(--secondary-color);
+}
+
+.f64{
+  font-size: 64px;
+}
+.f40{
+  font-size: 40px;
+}
+.f32{
+  font-size: 32px;
+}
+.f24{
+  font-size: 24px;
+}
+.f18{
+  font-size: 18px;
+}

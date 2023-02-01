@@ -3,7 +3,8 @@
   --secondary-color: #8591FF;
   --primary-text-color: #D3D4F0;
   --primary-bar-color: #6676ff;
-  --primary-card-color: #181D4859
+  --primary-card-color: #181D4859;
+  --input-background-color: rgba(255, 255, 255, 0.06);
 }
 
 .page {
@@ -67,4 +68,22 @@
   min-width: 50vh;
   background-color: var(--primary-card-color);
   color: var(--primary-text-color)
+}
+
+.default-input{
+  background-color: rgba(255, 255, 255, 0.06);
+  border-bottom: 0;
+  border: 2px solid #181D48;
+  color: var(--primary-text-color);
+  border-radius: 10px;
+}
+
+.v-field__outline {
+  color: transparent
+}
+.submit-button {
+  background-color: var(--input-background-color);
+  color: var(--primary-text-color) !important;
+  border: 2px solid #181D48;
+  width: 100%;
 }

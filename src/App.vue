@@ -11,6 +11,9 @@
       <Projects 
         class="page background--primary"
       />
+      <Contact
+        class="page background--primary"
+      />
     </v-main>
   </v-app>
 </template>
@@ -20,6 +23,7 @@ import Navbar from "./components/Navbar.vue";
 import Welcome from "./components/Welcome.vue";
 import About from "./components/About.vue";
 import Projects from "./components/Projects.vue";
+import Contact from "./components/Contact.vue";
 
 export default {
   name: "App",
@@ -29,6 +33,7 @@ export default {
     Welcome,
     About,
     Projects,
+    Contact
   },
 
   data: () => ({

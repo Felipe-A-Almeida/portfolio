@@ -80,7 +80,7 @@
     </v-row>
     <v-divider class="my-10" />
     <v-row
-      class="mx-10"
+      class="mx-10 mb-10"
     >
       <v-col
         class="text-align-center"
@@ -140,11 +140,19 @@
         </a>
       </v-col>
     </v-row>
+    <Footer 
+      class="footer"
+    />
   </div>
 </template>
 
 <script>
+import Footer from "@/components/Footer.vue";
+
 export default {
+  components: {
+    Footer
+  },
   data() {
     return {
       phone: '',
@@ -166,7 +174,6 @@ export default {
         this.phone = this.phone.slice(0,15);
         return false;
       };
-      console.log("###", this.phone.length);
       this.phone=this.phone.replace(/\D/g,"")
       this.phone=this.phone.replace(/^(\d\d)(\d)/g,"($1) $2")
       this.phone= (this.phone.length < 14) ?

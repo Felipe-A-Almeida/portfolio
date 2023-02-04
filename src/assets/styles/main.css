@@ -12,12 +12,26 @@
   min-width: 100vw;
 }
 
+.footer {
+  background-color: black;
+  color: var(--primary-text-color);
+  font-weight: 800;
+}
+
 .float-right {
   float: right;
 }
 
 .text-align-center{
   text-align: center;
+}
+
+.text-align-left{
+  text-align: left;
+}
+
+.text-align-right{
+  text-align: right;
 }
 
 .decoration-none{

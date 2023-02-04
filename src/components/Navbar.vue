@@ -4,6 +4,7 @@
       color="black accent-4"
       dense
       dark
+      class="px-5"
     >
       <v-toolbar-title>LOGO</v-toolbar-title>
 
@@ -12,17 +13,13 @@
       <v-btn
         v-for="item in menu_items"
         :key="`item_${item.label}`"
+        @click="$emit('goToSection', item.link)"
       >
-        <a 
-          :href="item.link"
-          class="decoration-none text-white"
+        <span
+          color="white"
         >
-          <span
-            color="white"
-          >
-            {{ item.label }}
-          </span>
-        </a>
+          {{ item.label }}
+        </span>
       </v-btn>
     </v-app-bar>
   </div>
@@ -37,19 +34,19 @@ export default {
       menu_items: [
         {
           label: "WELCOME",
-          link: "#welcome",
+          link: "welcome",
         },
         {
           label: "ABOUT",
-          link: "#about",
+          link: "about",
         },
         {
           label: "PROJECTS",
-          link: "#projects",
+          link: "projects",
         },
         {
           label: "CONTACT",
-          link: "#contact",
+          link: "contact",
         },
       ]
     }

@@ -1,16 +1,25 @@
 <template>
   <v-app>
     <v-main>
-      <Navbar />
+      <Navbar 
+        @goToSection="goToSection"
+      />
       <Welcome
+        id="welcome"
         class="page background--primary"
       />
       <About 
+        id="about"
         class="page background--primary"
       />
       <Projects 
+        id="projects"
         class="page background--primary"
       />
+      <div
+        id="contact"
+      >
+      </div>
       <Contact
         class="page background--primary"
       />
@@ -33,12 +42,21 @@ export default {
     Welcome,
     About,
     Projects,
-    Contact
+    Contact,
   },
 
   data: () => ({
     //
   }),
+
+  methods: {
+    goToSection(section) {
+      console.log("####", section);
+      var selected_section = document.getElementById(section);
+      console.log("@@@", selected_section.offset);
+      selected_section.scrollIntoView({ behavior: 'smooth'});
+    },
+  }
 };
 </script>
 

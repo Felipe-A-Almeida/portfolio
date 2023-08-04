@@ -5,22 +5,51 @@
       dense
       dark
       class="px-5"
+      style="width: 100vw"
     >
-      <v-toolbar-title>LOGO</v-toolbar-title>
 
-      <v-spacer></v-spacer>
-
-      <v-btn
-        v-for="item in menu_items"
-        :key="`item_${item.label}`"
-        @click="$emit('goToSection', item.link)"
+      <template 
+        v-if="$vuetify.display.mobile"
+        v-slot:append
       >
-        <span
-          color="white"
+        <v-menu>
+          <template v-slot:activator="{ props }">
+            <v-btn icon="mdi-menu" v-bind="props"></v-btn>
+          </template>
+
+          <v-list
+            class="py-0"
+          >
+            <v-list-item
+              v-for="item in menu_items"
+              :key="`mobile_item_${item.label}`"
+              class="responsive-menu-item px-10"
+              @click="$emit('goToSection', item.link)"
+            >
+              <span
+                color="white"
+              >
+                {{ item.label }}
+              </span>
+            </v-list-item>
+          </v-list>
+        </v-menu>
+      </template>
+      <div
+        v-if="!$vuetify.display.mobile"
+      >
+        <v-btn
+          v-for="item in menu_items"
+          :key="`item_${item.label}`"
+          @click="$emit('goToSection', item.link)"
         >
-          {{ item.label }}
-        </span>
-      </v-btn>
+          <span
+            color="white"
+          >
+            {{ item.label }}
+          </span>
+        </v-btn>
+      </div>
     </v-app-bar>
   </div>
 </template>

@@ -1,27 +1,57 @@
 <template>
   <v-app>
+    <ul class="background-all">
+      <li
+        v-for="n in 50"
+        :key="n"
+      >
+      </li>
+    </ul>
     <v-main>
       <Navbar 
         @goToSection="goToSection"
       />
+      <v-row>
+        <v-col
+          class="primary-bar bar"
+        />
+      </v-row>
       <Welcome
         id="welcome"
         class="page background--primary"
       />
+      <v-row>
+        <v-col
+          class="primary-bar bar"
+        />
+      </v-row>
       <About 
         id="about"
         class="page background--primary"
       />
+      <v-row>
+        <v-col
+          class="primary-bar bar"
+        />
+      </v-row>
       <Projects 
         id="projects"
         class="page background--primary"
       />
+      <v-row>
+        <v-col
+          class="primary-bar bar"
+        />
+      </v-row>
       <div
         id="contact"
       >
       </div>
       <Contact
         class="page background--primary"
+      />
+      <Footer 
+        class="footer"
       />
     </v-main>
   </v-app>
@@ -33,6 +63,7 @@ import Welcome from "./components/Welcome.vue";
 import About from "./components/About.vue";
 import Projects from "./components/Projects.vue";
 import Contact from "./components/Contact.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "App",
@@ -43,6 +74,7 @@ export default {
     About,
     Projects,
     Contact,
+    Footer
   },
 
   data: () => ({
@@ -51,10 +83,9 @@ export default {
 
   methods: {
     goToSection(section) {
-      console.log("####", section);
       var selected_section = document.getElementById(section);
-      console.log("@@@", selected_section.offset);
-      selected_section.scrollIntoView({ behavior: 'smooth'});
+      const y = selected_section.getBoundingClientRect().top + window.pageYOffset - 100;
+      window.scrollTo({top: y, behavior: 'smooth'});
     },
   }
 };
@@ -62,4 +93,5 @@ export default {
 
 <style>
   @import './assets/styles/main.css';
+  @import './assets/styles/background.css';
 </style>

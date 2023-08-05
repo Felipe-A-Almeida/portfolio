@@ -3,7 +3,7 @@
     <v-row>
       <v-col>
         <v-row
-          class="mt-10 text-align-center"
+          class="mt-10 text-align-center animate-slide-fade-right"
         >
           <v-col>
             <v-container>
@@ -20,7 +20,9 @@
     <v-row>
       <v-col>
         <v-container>
-          <v-form>
+          <v-form
+            class="contact-form"
+          >
             <v-row>
               <v-col>
                 <v-text-field
@@ -80,7 +82,7 @@
     </v-row>
     <v-divider class="my-10" />
     <v-row
-      class="mx-10 mb-10"
+      class="mx-10 mb-10 position-relative"
     >
       <v-col
         class="text-align-center"
@@ -140,19 +142,12 @@
         </a>
       </v-col>
     </v-row>
-    <Footer 
-      class="footer"
-    />
   </div>
 </template>
 
 <script>
-import Footer from "@/components/Footer.vue";
 
 export default {
-  components: {
-    Footer
-  },
   data() {
     return {
       phone: '',
@@ -165,8 +160,30 @@ export default {
       email_rules: [
         value => !!value || 'Required',
         value => (this.email_regex.test(value))
-      ]
+      ],
+      animation_list: [{
+        caller: "animate-slide-fade-top",
+        class: "slide-fade-top"
+      }, {
+        caller: "animate-slide-fade-right",
+        class: "slide-fade-right"
+      }],
     }
+  },
+  mounted() {
+    const about_position = document.getElementById("contact").getBoundingClientRect();
+    window.addEventListener("scroll", (event) => {
+      let scroll = window.scrollY;
+      if (scroll > about_position.top - 500) {
+        this.animation_list.forEach(animation => {
+          const divs = document.getElementsByClassName(animation.caller);
+          Array.from(divs).forEach((div) => {
+            div.classList.add(animation.class);
+            div.classList.remove(animation.caller);
+          })
+        });
+      }
+    });
   },
   methods: {
     formatPhone(){

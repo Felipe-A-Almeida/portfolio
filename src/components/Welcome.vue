@@ -1,62 +1,73 @@
 <template>
   <div>
+  
     <v-row
-      class="ml-10"
+      class="ml-10 max-width-1900"
     >
       <v-col
-       cols="8"
-       xs="12"
+       cols="12"
+       xl="6"
+       lg="6"
+       md="6"
       >
         <v-row
-          class="mt-10"
+          class="slide-fade-bottom"
         >
           <v-col>
             <v-container>
               <span
-                class="text--secondary f64 mt-10"
+                class="text--primary f64"
               >
                 WELCOME
               </span>
             </v-container>
           </v-col>
         </v-row>
-        <v-row>
+        <v-row
+          class="slide-fade-bottom"
+        >
           <v-col>
             <v-container>
               <span
                 class="text--primary f32"
               >
-                Software to solve!
+                My name is Felipe Almeida.
               </span>
             </v-container>
           </v-col>
         </v-row>
-        <v-row>
+        <v-row
+          class="slide-fade-right"
+        >
           <v-col>
             <v-container>
-              <span
-                class="text--primary f32"
+              <p
+                class="text--primary f18"
               >
-                Our specialty is to design and develop software to
-                <br />
-                help companies and people in several areas.
-              </span>
+                I’m a fullstack developer with more than 5 years of professional experience.
+                My specialty is design and develop web solutions, landing pages and complex
+                systems based on pre-established requirements. I'm 23 years old and based in Brazil.
+              </p>
             </v-container>
           </v-col>
         </v-row>
       </v-col>
       <v-col>
-        <v-row
-          class="float-right mr-10 pr-10"
+        <div
+          class="text-align-center mr-10 pr-10 slide-fade-right"
         >
-          <v-col>
-            <img 
-              src="@/assets/animated_icon.gif"
-              alt="Animated icon"
+          <v-avatar
+            size="300"
+          >
+            <img
+              src="@/assets/my_photo.jpg"
+              alt="Felipe Almeida"
+              height="400"
+              id="profile-photo"
             >
-          </v-col>
-        </v-row>
-      </v-col>
+          </v-avatar>
+        </div>
+      </v-col>    
     </v-row>
   </div>
 </template>

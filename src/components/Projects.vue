@@ -1,8 +1,13 @@
 <template>
   <div>
-    <v-row
-      class="ml-10"
-    >
+    <ul class="background-all">
+      <li
+        v-for="n in 50"
+        :key="n"
+      >
+      </li>
+    </ul>
+    <v-row>
       <v-col
        cols="12"
       >
@@ -22,7 +27,7 @@
       </v-col>
     </v-row>
     <v-row
-      class="ml-10"
+      class="project-ml"
     >
       <v-col>
         <v-slide-group
@@ -34,7 +39,7 @@
             :key="`project_${index}`"
           >
             <v-card
-              class="ml-10 project-card"
+              class="project-ml project-card m-margin-left-0"
             >
               <v-img
                 class="white--text align-end"

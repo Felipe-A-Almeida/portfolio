@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #000000;
+  --primary-color: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(22, 22, 22) 70%);
   --secondary-color: #ffffff;
   --primary-text-color: #ffffff;
   --primary-bar-color: #303030;
   --primary-card-color: #181D4859;
-  --input-background-color: rgba(22, 22, 22, 0.9);
+  --input-background-color: rgba(49, 49, 49, 0.9);
 }
 
 body {
@@ -22,6 +22,10 @@ body {
   width: 100vw;
 }
 
+.background--primary {
+  background: var(--primary-color);
+}
+
 .primary-bar {
   background-color: var(--primary-bar-color);
 }
@@ -37,7 +41,7 @@ body {
 }
 
 .footer {
-  background-color: black;
+  background: var(--primary-color);
   color: var(--primary-text-color);
   font-weight: 800;
 }
@@ -66,12 +70,35 @@ body {
   text-decoration: none;
 }
 
-.background--primary{
-  background-color: var(--primary-color);
+.project-ml {
+  margin-left: 40px;
 }
+
 #profile-photo{
   margin-top: 50px;
 }
+
+.avatar {
+  border: 5px white solid;
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 25px 0px rgba(0, 0, 0, 0.9);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 25px 0px rgba(0, 0, 0, 0.267);
+    transform: translatey(-40px);
+  }
+  100% {
+    box-shadow: 0 5px 25px 0px rgba(0, 0, 0, 0.9);
+    transform: translatey(0px);
+  }
+}
+
 
 .bar--primary{
   border-left: 5px solid var(--primary-bar-color);
@@ -277,3 +304,47 @@ body {
   }
 }
 
+
+/*---------------------------------- BACKGROUND GRADIENT */
+
+.background-gradient {
+  background: linear-gradient(90deg, #000000, #181818, #000000, #1a1a1a, #000000, #000000, #181818, #000000, #1a1a1a, #000000);
+  background-size: 400% 400%;
+
+  -webkit-animation: GradientAnimation 120s ease infinite;
+  -moz-animation: GradientAnimation 120s ease infinite;
+  animation: GradientAnimation 120s ease infinite;
+}
+
+@-webkit-keyframes GradientAnimation {
+  0%{background-position:0% 0%}
+  50%{background-position:100% 52%}
+  100%{background-position:0% 49%}
+}
+@-moz-keyframes GradientAnimation {
+  0%{background-position:0% 0%}
+  50%{background-position:100% 52%}
+  100%{background-position:0% 49%}
+}
+@keyframes GradientAnimation {
+  0%{background-position:0% 0%}
+  50%{background-position:100% 52%}
+  100%{background-position:0% 49%}
+}
+
+/*-------------------------------END BACKGROUND GRADIENT */
+
+@media (max-width: 500px) {
+  .m-padding-left-0 {
+    padding-left: 0px !important;
+  }
+  .project-ml {
+    margin-left: 0px !important;
+  }
+  .m-display-none {
+    display: none;
+  }
+  .background-all {
+    min-height: -webkit-fill-available !important;
+  }
+}

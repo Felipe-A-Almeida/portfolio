@@ -1,12 +1,5 @@
 <template>
   <v-app>
-    <ul class="background-all">
-      <li
-        v-for="n in 50"
-        :key="n"
-      >
-      </li>
-    </ul>
     <v-main>
       <Navbar 
         @goToSection="goToSection"
@@ -18,7 +11,7 @@
       </v-row>
       <Welcome
         id="welcome"
-        class="page background--primary"
+        class="page background--primary px-10"
       />
       <v-row>
         <v-col

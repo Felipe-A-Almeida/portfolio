@@ -1,6 +1,12 @@
 <template>
   <div>
-  
+    <ul class="background-all">
+      <li
+        v-for="n in 50"
+        :key="n"
+      >
+      </li>
+    </ul>
     <v-row
       class="ml-10 max-width-1900"
     >
@@ -39,10 +45,14 @@
         <v-row
           class="slide-fade-right"
         >
-          <v-col>
-            <v-container>
+          <v-col
+            class="m-padding-left-0"
+          >
+            <v-container
+              class="m-padding-left-0"
+            >
               <p
-                class="text--primary f18"
+                class="text--primary f18 pr-3 pl-2"
               >
                 I’m a fullstack developer with more than 5 years of professional experience.
                 My specialty is design and develop web solutions, landing pages and complex
@@ -54,18 +64,23 @@
       </v-col>
       <v-col>
         <div
-          class="text-align-center mr-10 pr-10 slide-fade-right"
+          class="text-align-center mr-10 pr-10 slide-fade-right mb-5"
         >
-          <v-avatar
-            size="300"
-          >
-            <img
-              src="@/assets/my_photo.jpg"
-              alt="Felipe Almeida"
-              height="400"
-              id="profile-photo"
-            >
-          </v-avatar>
+          <v-row>
+            <v-col>
+              <v-avatar
+                size="300"
+                class="avatar"
+              >
+                <img
+                  src="@/assets/my_photo.jpg"
+                  alt="Felipe Almeida"
+                  height="400"
+                  id="profile-photo"
+                >
+              </v-avatar>
+            </v-col>
+          </v-row>
         </div>
       </v-col>    
     </v-row>

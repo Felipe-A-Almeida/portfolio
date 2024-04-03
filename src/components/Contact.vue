@@ -82,7 +82,7 @@
     </v-row>
     <v-divider class="my-10" />
     <v-row
-      class="mx-10 mb-10 position-relative"
+      class="mx-10 pb-10 position-relative"
     >
       <v-col
         class="text-align-center"
@@ -97,7 +97,7 @@
             mdi-github
           </v-icon>
           <span
-            class="text--secondary"
+            class="text--secondary m-display-none"
           >
             GITHUB
           </span>
@@ -116,7 +116,7 @@
             mdi-linkedin
           </v-icon>
           <span
-            class="text--secondary"
+            class="text--secondary m-display-none"
           >
             LINKEDIN
           </span>
@@ -135,7 +135,7 @@
             mdi-instagram
           </v-icon>
           <span
-            class="text--secondary"
+            class="text--secondary m-display-none"
           >
             INSTAGRAM
           </span>

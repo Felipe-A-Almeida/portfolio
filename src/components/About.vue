@@ -2,10 +2,15 @@
   <div
     id="about"
   >
-    <v-container>
-      <v-row
-        class="ml-10"
+    <ul class="background-all">
+      <li
+        v-for="n in 50"
+        :key="n"
       >
+      </li>
+    </ul>
+    <v-container>
+      <v-row>
         <v-col
         cols="12"
         >
@@ -24,12 +29,14 @@
           </v-row>
         </v-col>
       </v-row>
-      <v-row>
+      <v-row
+        class="mb-10"
+      >
         <v-col
           class="animate-slide-fade-right"
         >
           <v-row
-            class="ml-10 px-10"
+            class="px-10"
           >
             <v-col
               v-for="(tool, index) in tools"
@@ -37,7 +44,7 @@
               cols="12"
               md="6"
               lg="4"
-              class="pt-0 pl-10 d-flex justify-center"
+              class="pt-0 pl-0 d-flex justify-center"
             >
               <p
                 class="text--primary mt-5 f18 d-flex"

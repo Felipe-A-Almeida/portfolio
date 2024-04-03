@@ -9,7 +9,7 @@
         <v-col
           class="text-align-right"
         >
-          MADE BY FELIPE AUGUSTO © {{ new Date().getFullYear() }}
+          MADE BY FELIPE A. ALMEIDA © {{ new Date().getFullYear() }}
         </v-col>
       </v-row>
     </v-footer>

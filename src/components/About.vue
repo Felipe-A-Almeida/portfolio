@@ -83,62 +83,62 @@ export default {
       tools: [
         {
           name: 'JAVASCRIPT',
-          logo: 'src/assets/logo/javascript-logo.svg',
+          logo: '@/assets/logo/javascript-logo.svg',
           width: '40',
         },
         {
           name: 'NODE',
-          logo: 'src/assets/logo/node-logo.svg',
+          logo: '@/assets/logo/node-logo.svg',
           width: '40',
         },
         {
           name: 'VUE',
-          logo: 'src/assets/logo/vue-logo.svg',
+          logo: '@/assets/logo/vue-logo.svg',
           width: '40',
         },
         {
           name: 'REACT',
-          logo: 'src/assets/logo/react-logo.svg',
+          logo: '@/assets/logo/react-logo.svg',
           width: '40',
         },
         {
           name: 'TYPESCRIPT',
-          logo: 'src/assets/logo/typescript-logo.svg',
+          logo: '@/assets/logo/typescript-logo.svg',
           width: '40',
         },
         {
           name: 'SASS',
-          logo: 'src/assets/logo/sass-logo.svg',
+          logo: '@/assets/logo/sass-logo.svg',
           width: '40',
         },
         {
           name: 'FIGMA',
-          logo: 'src/assets/logo/figma-logo.svg',
+          logo: '@/assets/logo/figma-logo.svg',
           width: '40',
         },
         {
           name: 'PHP',
-          logo: 'src/assets/logo/php-logo.svg',
+          logo: '@/assets/logo/php-logo.svg',
           width: '40',
         },
         {
           name: 'RUBY',
-          logo: 'src/assets/logo/ruby-logo.svg',
+          logo: '@/assets/logo/ruby-logo.svg',
           width: '40',
         },
         {
           name: 'PYTHON',
-          logo: 'src/assets/logo/python-logo.svg',
+          logo: '@/assets/logo/python-logo.svg',
           width: '40'
         },
         {
           name: 'SQL',
-          logo: 'src/assets/logo/sql-logo.png',
+          logo: '@/assets/logo/sql-logo.png',
           width: '40'
         },
         {
           name: 'MONGODB',
-          logo: 'src/assets/logo/mongodb-logo.png',
+          logo: '@/assets/logo/mongodb-logo.png',
           width: '40'
         }
       ]

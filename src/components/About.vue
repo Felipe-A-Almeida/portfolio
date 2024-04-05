@@ -39,8 +39,6 @@
             class="px-10"
           >
             <v-col
-              v-for="(tool, index) in tools"
-              :key="`tool_${index}`"
               cols="12"
               md="6"
               lg="4"
@@ -50,15 +48,37 @@
                 class="text--primary mt-5 f18 d-flex"
               >
                 <img
-                  :src="tool.logo"
-                  :alt="tool.name"
+                  src="@/assets/logo/javascript-logo.svg"
+                  alt="Javascript"
                   width="40"
-                  class="mr-1"
+                  class="mr-1 tool-logo"
                 >
                 <span
                   class="d-flex align-center"
                 >
-                  {{ tool.name }}
+                  JAVASCRIPT
+                </span>
+              </p>
+            </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              lg="4"
+              class="pt-0 pl-0 d-flex justify-center"
+            >
+              <p
+                class="text--primary mt-5 f18 d-flex"
+              >
+                <img
+                  src="@/assets/logo/node-logo.svg"
+                  alt="Node"
+                  width="40"
+                  class="mr-1 tool-logo"
+                >
+                <span
+                  class="d-flex align-center"
+                >
+                  NODE
                 </span>
               </p>
             </v-col>
@@ -83,68 +103,69 @@ export default {
       tools: [
         {
           name: 'JAVASCRIPT',
-          logo: 'dist/assets/logo/javascript-logo.svg',
+          logo: '@/assets/logo/javascript-logo.svg',
           width: '40',
         },
         {
           name: 'NODE',
-          logo: 'dist/assets/logo/node-logo.svg',
+          logo: 'src/assets/logo/node-logo.svg',
           width: '40',
         },
         {
           name: 'VUE',
-          logo: 'dist/assets/logo/vue-logo.svg',
+          logo: 'src/assets/logo/vue-logo.svg',
           width: '40',
         },
         {
           name: 'REACT',
-          logo: 'dist/assets/logo/react-logo.svg',
+          logo: 'src/assets/logo/react-logo.svg',
           width: '40',
         },
         {
           name: 'TYPESCRIPT',
-          logo: 'dist/assets/logo/typescript-logo.svg',
+          logo: 'src/assets/logo/typescript-logo.svg',
           width: '40',
         },
         {
           name: 'SASS',
-          logo: 'dist/assets/logo/sass-logo.svg',
+          logo: 'src/assets/logo/sass-logo.svg',
           width: '40',
         },
         {
           name: 'FIGMA',
-          logo: 'dist/assets/logo/figma-logo.svg',
+          logo: 'src/assets/logo/figma-logo.svg',
           width: '40',
         },
         {
           name: 'PHP',
-          logo: 'dist/assets/logo/php-logo.svg',
+          logo: 'src/assets/logo/php-logo.svg',
           width: '40',
         },
         {
           name: 'RUBY',
-          logo: 'dist/assets/logo/ruby-logo.svg',
+          logo: 'src/assets/logo/ruby-logo.svg',
           width: '40',
         },
         {
           name: 'PYTHON',
-          logo: 'dist/assets/logo/python-logo.svg',
+          logo: 'src/assets/logo/python-logo.svg',
           width: '40'
         },
         {
           name: 'SQL',
-          logo: 'dist/assets/logo/sql-logo.png',
+          logo: 'src/assets/logo/sql-logo.png',
           width: '40'
         },
         {
           name: 'MONGODB',
-          logo: 'dist/assets/logo/mongodb-logo.png',
+          logo: 'src/assets/logo/mongodb-logo.png',
           width: '40'
         }
       ]
     }
   },
   mounted() {
+    console.log("!!!");
     const about_position = document.getElementById("about").getBoundingClientRect();
     window.addEventListener("scroll", (event) => {
       let scroll = window.scrollY;

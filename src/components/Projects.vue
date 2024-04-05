@@ -27,7 +27,7 @@
       </v-col>
     </v-row>
     <v-row
-      class="project-ml"
+      class="project-ml  mb-5"
     >
       <v-col>
         <v-slide-group
@@ -35,27 +35,30 @@
           show-arrows
         >
           <v-slide-item
-            v-for="(project, index) in projects"
-            :key="`project_${index}`"
+            class="project-card-item"
           >
             <v-card
-              class="project-ml project-card m-margin-left-0"
+              class="project-ml project-card m-margin-left-0 center"
             >
-              <v-img
+              <img
                 class="white--text align-end"
-                height="200px"
-                :src="project.img"
+                height="200"
+                src="@/assets/project-pokedex.png"
               />
               <v-card-subtitle class="mt-5 pb-0">
-                <span class="f24">{{ project.title }}</span>
+                <span class="f24">Pokedex</span>
               </v-card-subtitle>
 
               <v-card-text class="text--primary">
-                <div>
-                  {{ project.description }}
+                <div
+                  class="left"
+                >
+                  This software allows you to consult all pokemons using PokeAPI. It also allow you to search for a specific pokemon by it's name and shows details about a selected Pokemon.
                 </div>
-                <div>
-                  {{ project.details }} 
+                <div
+                  class="left"
+                >
+                  This project was developed using VueJs and Vuetify framework.
                 </div>
               </v-card-text>
 
@@ -86,12 +89,6 @@
 export default {
   data(){
     return {
-      projects: [{
-        img: 'src/assets/project-pokedex.png',
-        title: 'Pokedex',
-        description: "This software allows you to consult all pokemons using PokeAPI. It also allow you to search for a specific pokemon by it's name and shows details about a selected Pokemon.",
-        details: 'This project was developed using VueJs and Vuetify framework.'
-      }],
       animation_list: [{
         caller: "animate-slide-fade-top",
         class: "slide-fade-top"

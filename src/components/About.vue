@@ -82,6 +82,226 @@
                 </span>
               </p>
             </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              lg="4"
+              class="pt-0 pl-0 d-flex justify-center"
+            >
+              <p
+                class="text--primary mt-5 f18 d-flex"
+              >
+                <img
+                  src="@/assets/logo/vue-logo.svg"
+                  alt="Vue"
+                  width="40"
+                  class="mr-1 tool-logo"
+                >
+                <span
+                  class="d-flex align-center"
+                >
+                  VUE
+                </span>
+              </p>
+            </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              lg="4"
+              class="pt-0 pl-0 d-flex justify-center"
+            >
+              <p
+                class="text--primary mt-5 f18 d-flex"
+              >
+                <img
+                  src="@/assets/logo/react-logo.svg"
+                  alt="React"
+                  width="40"
+                  class="mr-1 tool-logo"
+                >
+                <span
+                  class="d-flex align-center"
+                >
+                  REACT
+                </span>
+              </p>
+            </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              lg="4"
+              class="pt-0 pl-0 d-flex justify-center"
+            >
+              <p
+                class="text--primary mt-5 f18 d-flex"
+              >
+                <img
+                  src="@/assets/logo/typescript-logo.svg"
+                  alt="Typescript"
+                  width="40"
+                  class="mr-1 tool-logo"
+                >
+                <span
+                  class="d-flex align-center"
+                >
+                  TYPESCRIPT
+                </span>
+              </p>
+            </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              lg="4"
+              class="pt-0 pl-0 d-flex justify-center"
+            >
+              <p
+                class="text--primary mt-5 f18 d-flex"
+              >
+                <img
+                  src="@/assets/logo/sass-logo.svg"
+                  alt="SASS"
+                  width="40"
+                  class="mr-1 tool-logo"
+                >
+                <span
+                  class="d-flex align-center"
+                >
+                  SASS
+                </span>
+              </p>
+            </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              lg="4"
+              class="pt-0 pl-0 d-flex justify-center"
+            >
+              <p
+                class="text--primary mt-5 f18 d-flex"
+              >
+                <img
+                  src="@/assets/logo/figma-logo.svg"
+                  alt="Figma"
+                  width="40"
+                  class="mr-1 tool-logo"
+                >
+                <span
+                  class="d-flex align-center"
+                >
+                  FIGMA
+                </span>
+              </p>
+            </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              lg="4"
+              class="pt-0 pl-0 d-flex justify-center"
+            >
+              <p
+                class="text--primary mt-5 f18 d-flex"
+              >
+                <img
+                  src="@/assets/logo/php-logo.svg"
+                  alt="PHP"
+                  width="40"
+                  class="mr-1 tool-logo"
+                >
+                <span
+                  class="d-flex align-center"
+                >
+                  PHP
+                </span>
+              </p>
+            </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              lg="4"
+              class="pt-0 pl-0 d-flex justify-center"
+            >
+              <p
+                class="text--primary mt-5 f18 d-flex"
+              >
+                <img
+                  src="@/assets/logo/ruby-logo.svg"
+                  alt="Ruby"
+                  width="40"
+                  class="mr-1 tool-logo"
+                >
+                <span
+                  class="d-flex align-center"
+                >
+                  RUBY
+                </span>
+              </p>
+            </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              lg="4"
+              class="pt-0 pl-0 d-flex justify-center"
+            >
+              <p
+                class="text--primary mt-5 f18 d-flex"
+              >
+                <img
+                  src="@/assets/logo/python-logo.svg"
+                  alt="Python"
+                  width="40"
+                  class="mr-1 tool-logo"
+                >
+                <span
+                  class="d-flex align-center"
+                >
+                  PYTHON
+                </span>
+              </p>
+            </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              lg="4"
+              class="pt-0 pl-0 d-flex justify-center"
+            >
+              <p
+                class="text--primary mt-5 f18 d-flex"
+              >
+                <img
+                  src="@/assets/logo/sql-logo.png"
+                  alt="SQL"
+                  width="40"
+                  class="mr-1 tool-logo"
+                >
+                <span
+                  class="d-flex align-center"
+                >
+                  SQL
+                </span>
+              </p>
+            </v-col>
+            <v-col
+              cols="12"
+              md="6"
+              lg="4"
+              class="pt-0 pl-0 d-flex justify-center"
+            >
+              <p
+                class="text--primary mt-5 f18 d-flex"
+              >
+                <img
+                  src="@/assets/logo/mongodb-logo.png"
+                  alt="MONGODB"
+                  width="40"
+                  class="mr-1 tool-logo"
+                >
+                <span
+                  class="d-flex align-center"
+                >
+                  MONGODB
+                </span>
+              </p>
+            </v-col>
           </v-row>
         </v-col>
       </v-row>
@@ -100,72 +320,9 @@ export default {
         caller: "animate-slide-fade-right",
         class: "slide-fade-right"
       }],
-      tools: [
-        {
-          name: 'JAVASCRIPT',
-          logo: '@/assets/logo/javascript-logo.svg',
-          width: '40',
-        },
-        {
-          name: 'NODE',
-          logo: 'src/assets/logo/node-logo.svg',
-          width: '40',
-        },
-        {
-          name: 'VUE',
-          logo: 'src/assets/logo/vue-logo.svg',
-          width: '40',
-        },
-        {
-          name: 'REACT',
-          logo: 'src/assets/logo/react-logo.svg',
-          width: '40',
-        },
-        {
-          name: 'TYPESCRIPT',
-          logo: 'src/assets/logo/typescript-logo.svg',
-          width: '40',
-        },
-        {
-          name: 'SASS',
-          logo: 'src/assets/logo/sass-logo.svg',
-          width: '40',
-        },
-        {
-          name: 'FIGMA',
-          logo: 'src/assets/logo/figma-logo.svg',
-          width: '40',
-        },
-        {
-          name: 'PHP',
-          logo: 'src/assets/logo/php-logo.svg',
-          width: '40',
-        },
-        {
-          name: 'RUBY',
-          logo: 'src/assets/logo/ruby-logo.svg',
-          width: '40',
-        },
-        {
-          name: 'PYTHON',
-          logo: 'src/assets/logo/python-logo.svg',
-          width: '40'
-        },
-        {
-          name: 'SQL',
-          logo: 'src/assets/logo/sql-logo.png',
-          width: '40'
-        },
-        {
-          name: 'MONGODB',
-          logo: 'src/assets/logo/mongodb-logo.png',
-          width: '40'
-        }
-      ]
     }
   },
   mounted() {
-    console.log("!!!");
     const about_position = document.getElementById("about").getBoundingClientRect();
     window.addEventListener("scroll", (event) => {
       let scroll = window.scrollY;

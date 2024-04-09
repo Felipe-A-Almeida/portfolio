@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-footer
-      class="pl-0"
+      class="pl-0 background--primary"
     >
       <v-row
         class="footer px-5 py-3"

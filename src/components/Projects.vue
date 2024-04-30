@@ -35,6 +35,63 @@
           show-arrows
         >
           <v-slide-item
+            class="project-card-item ml-3"
+          >
+            <v-card
+              class="project-ml project-card m-margin-left-0 center"
+            >
+              <img
+                class="white--text align-end"
+                height="200"
+                src="@/assets/project-gpt3.png"
+              />
+              <v-card-subtitle class="mt-5 pb-0">
+                <span class="f24">GPT-3  Showcase</span>
+              </v-card-subtitle>
+
+              <v-card-text class="text--primary">
+                <div
+                  class="left"
+                >
+                  A landing page about GPT-3, the cutting-edge AI language
+                  model revolutionizing industries worldwide. Learn more about its capabilities,
+                  applications, and how it can transform your projects. Dive into the future
+                  of AI-driven innovation!".
+                </div>
+                <div
+                  class="left"
+                >
+                  This project was developed using ReactJS framework.
+                </div>
+              </v-card-text>
+
+              <v-card-actions>
+                <a
+                  href="https://felipe-a-almeida.github.io/react_project/"
+                  target="_blank"
+                >
+                  <v-btn
+                    color="var(--secondary-color)"
+                    text
+                  >
+                    Open
+                  </v-btn>
+                </a>
+                <a
+                  href="https://felipe-a-almeida.github.io/react_project/"
+                  target="_blank"
+                >
+                  <v-btn
+                    color="var(--secondary-color)"
+                    text
+                  >
+                    Github
+                  </v-btn>
+                </a>
+              </v-card-actions>
+            </v-card>
+          </v-slide-item>
+          <v-slide-item
             class="project-card-item"
           >
             <v-card

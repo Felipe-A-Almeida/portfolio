@@ -196,6 +196,21 @@ body {
   width: 100%;
 }
 
+.activity-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.activity-card {
+  background-color: var(--input-background-color);
+  padding: 20px;
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+  margin-bottom: 5vw;
+}
+
 .animate-slide-fade-top, .animate-slide-fade-right {
   opacity: 0;
 }
@@ -357,6 +372,13 @@ body {
 }
 
 /*-------------------------------END BACKGROUND GRADIENT */
+
+@media (max-width: 1200px) {
+  .activity-cards {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+}
 
 @media (max-width: 500px) {
   .m-padding-left-0 {

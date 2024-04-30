@@ -27,6 +27,14 @@
           class="primary-bar bar"
         />
       </v-row>
+      <Activity
+        class="page background--primary"
+      />
+      <v-row>
+        <v-col
+          class="primary-bar bar"
+        />
+      </v-row>
       <Projects 
         id="projects"
         class="page background--primary"
@@ -54,6 +62,7 @@
 import Navbar from "./components/Navbar.vue";
 import Welcome from "./components/Welcome.vue";
 import About from "./components/About.vue";
+import Activity from "./components/Activity/index.vue";
 import Projects from "./components/Projects.vue";
 import Contact from "./components/Contact.vue";
 import Footer from "@/components/Footer.vue";
@@ -65,6 +74,7 @@ export default {
     Navbar,
     Welcome,
     About,
+    Activity,
     Projects,
     Contact,
     Footer

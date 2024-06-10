@@ -148,17 +148,23 @@ body {
 .f18{
   font-size: 18px;
 }
+.f12{
+  font-size: 12px;
+}
 
 .responsive-menu-item {
   background-color: var(--input-background-color);
   color: var(--primary-text-color)
 }
 
-.project-card{
+.project-card {
   padding-top: 20px;
-  min-width: 50vh;
+  min-width: 30vw;
   background-color: var(--input-background-color);
-  color: var(--primary-text-color)
+  color: var(--primary-text-color);
+  border-radius: 15px;
+  height: 470px;
+  overflow-y: auto;
 }
 
 .project-card-item {
@@ -209,6 +215,7 @@ body {
   margin-left: 2.5vw;
   margin-right: 2.5vw;
   margin-bottom: 5vw;
+  border-radius: 15px;
 }
 
 .animate-slide-fade-top, .animate-slide-fade-right {
@@ -393,5 +400,18 @@ body {
   }
   .background-all {
     min-height: -webkit-fill-available !important;
+  }
+
+  .project-card {
+    width: 65vw;
+    margin-right: 25px !important;
+  }
+
+  .project-img {
+    width: 50vw;
+    height: auto;
+  }
+  .mobile-aling-center {
+    text-align: center;
   }
 }

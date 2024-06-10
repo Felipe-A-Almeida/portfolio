@@ -28,6 +28,7 @@
         />
       </v-row>
       <Activity
+        id="activities"
         class="page background--primary"
       />
       <v-row>

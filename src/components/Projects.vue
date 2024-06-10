@@ -41,7 +41,7 @@
               class="project-ml project-card m-margin-left-0 center"
             >
               <img
-                class="white--text align-end"
+                class="white--text align-end project-img"
                 height="200"
                 src="@/assets/project-gpt3.png"
               />
@@ -98,7 +98,7 @@
               class="project-ml project-card m-margin-left-0 center"
             >
               <img
-                class="white--text align-end"
+                class="white--text align-end project-img"
                 height="200"
                 src="@/assets/project-pokedex.png"
               />

@@ -54,9 +54,9 @@
               <p
                 class="text--primary f18 pr-3 pl-2"
               >
-                I’m a fullstack developer with more than 5 years of professional experience.
+                I’m a fullstack developer with more than {{ new Date().getFullYear() - 2018 }} years of professional experience.
                 My specialty is design and develop web solutions, landing pages and complex
-                systems based on pre-established requirements. I'm 23 years old and based in Brazil.
+                systems based on pre-established requirements. I'm {{ getAge }} years old and based in Brazil.
               </p>
             </v-container>
           </v-col>
@@ -89,6 +89,13 @@
 
 <script>
 export default {
-  
+  computed: {
+    getAge() {
+      const current_date = new Date();
+      const birth_date = new Date('1999-08-14');
+      const age = new Date(current_date - birth_date).getFullYear() - 1970
+      return age
+    }
+  }
 }
 </script>

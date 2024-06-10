@@ -70,6 +70,10 @@ export default {
           link: "about",
         },
         {
+          label: "ACTIVITIES",
+          link: 'activities'
+        },
+        {
           label: "PROJECTS",
           link: "projects",
         },

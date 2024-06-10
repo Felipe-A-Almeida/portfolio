@@ -1,13 +1,13 @@
 <template>
   <div>
     <v-footer
-      class="pl-0 background--primary"
+      class="px-0 background--primary"
     >
       <v-row
         class="footer px-5 py-3"
       >
         <v-col
-          class="text-align-right"
+          class="text-align-right mobile-aling-center f12"
         >
           MADE BY FELIPE A. ALMEIDA © {{ new Date().getFullYear() }}
         </v-col>

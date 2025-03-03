@@ -100,17 +100,17 @@
               <img
                 class="white--text align-end project-img"
                 height="200"
-                src="@/assets/project-pokedex.png"
+                src="@/assets/project-anama.png"
               />
               <v-card-subtitle class="mt-5 pb-0">
-                <span class="f24">Pokedex</span>
+                <span class="f24">Anamá Restaurant</span>
               </v-card-subtitle>
 
               <v-card-text class="text--primary">
                 <div
                   class="left"
                 >
-                  This software allows you to consult all pokemons using PokeAPI. It also allow you to search for a specific pokemon by it's name and shows details about a selected Pokemon.
+                  Landing page to this refined restaurant. Founded by chef Maria Laura, from Ipeúna/SP - Brazil, this experience will bring the flavors and passion of her country. Certainly you will require a comeback.
                 </div>
                 <div
                   class="left"
@@ -120,19 +120,29 @@
               </v-card-text>
 
               <v-card-actions>
-                <v-btn
-                  color="var(--secondary-color)"
-                  text
+                <a
+                  href="https://felipe-a-almeida.github.io/anama_restaurant/"
+                  target="_blank"
                 >
-                  Open
-                </v-btn>
+                  <v-btn
+                    color="var(--secondary-color)"
+                    text
+                  >
+                    Open
+                  </v-btn>
+                </a>
 
-                <v-btn
-                  color="var(--secondary-color)"
-                  text
+                <a
+                  href="https://github.com/Felipe-A-Almeida/anama_restaurant"
+                  target="_blank"
                 >
-                  Github
-                </v-btn>
+                  <v-btn
+                    color="var(--secondary-color)"
+                    text
+                  >
+                    Github
+                  </v-btn>
+                </a>
               </v-card-actions>
             </v-card>
           </v-slide-item>
